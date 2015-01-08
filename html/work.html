@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<title>Finn Clark - Designer</title>
+  	<script src="//use.typekit.net/rvz1htw.js"></script>
+		<script>try{Typekit.load();}catch(e){}</script>
+		<script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
+		<script src="../js/jquery.isotope.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="../css/style.css">
+  	<link rel="stylesheet" href="../css/bootstrap.css">
+  	<link rel="stylesheet" href="../css/home.css">
+</head>
+<body>
+
+	<div class="container-fluid main-container">
+		<div class="row">
+			<div class="col-md-12 header-img">
+				<img src="../img/flask-blue.svg">
+			</div>
+		</div>
+	</div>
+
+	<div class="container main-container">
+		<div class="row">
+			<!-- <div class="col-md-4 col-xs-12 select-container">
+				<select class="portfolioFilter">
+					<option value="" disabled selected data-filter="*" class="current">Filter by:</option>
+					<option value="Design" data-filter=".design">Design</option>
+					<option value="Photography" data-filter=".photography">Photography</option>
+					<option value="Illustration" data-filter=".illustration">Illustration</option>
+					<option value="All" data-filter="*" class="current">All</option>
+				</select>
+			</div> -->
+
+			<div class="col-md-12 col-xs-12 portfolioFilter">
+				<a href="#" data-filter=".design"><img src="../img/laptop.svg" class="filter-design"><span class="filter-design-text">Design</span></a>
+				<a href="#" data-filter=".photography"><img src="../img/camera.svg" class="filter-photography"><span class="filter-photography-text">Photography</span></a>
+				<a href="#" data-filter=".illustration"><img src="../img/pencil-brush.svg" class="filter-illustration"><span class="filter-illustration-text">Illustration</span></a>
+				<a href="#" data-filter="*" class="current"><img src="../img/plus-circle.svg" class="filter-all"><span class="filter-all-text">All</span></a>
+			</div>
+		</div>
+
+		<div class="row work-posts">
+			<div class="portfolioContainer">
+
+				<div class="col-md-4 col-xs-6 photography design">
+					<a href="work/printlab.html">
+						<img src="../img/work/printlab/print-lab-preview.jpg">
+						<div><span>Printing Lab</span></div>
+					</a>
+				</div>
+
+				<div class="col-md-4 col-xs-6 photography">
+					<a href="work/zacheadshots.html">
+						<img src="../img/work/zacheadshots/zac-headshots-preview.jpg">
+						<div><span>Zac's Headshots</span></div>
+					</a>
+				</div>
+
+				<div class="col-md-4 col-xs-6 photography">
+					<a href="work/tompiha.html">
+						<img src="../img/work/tompiha/tom-piha-preview.jpg">
+						<div><span>Piha Beach</span></div>
+					</a>
+				</div>
+
+				<div class="col-md-4 col-xs-6 photography">
+					<a href="work/mount.html">
+						<img src="../img/work/mount/mount-preview.jpg">
+						<div><span>Mount Maunganui</span></div>
+					</a>
+				</div>
+
+				<div class="col-md-4 col-xs-6 photography">
+					<a href="work/hatchquiz.html">
+						<img src="../img/work/hatchquiz/hatch-quiz-preview.jpg">
+						<div><span>Hatch Quiz Night</span></div>
+					</a>
+				</div>
+
+				<div class="col-md-4 col-xs-6 photography design">
+					<a href="work/emilystudio.html">
+						<img src="../img/work/emilystudio/emily-studio-preview.jpg">
+						<div><span>Emily in the Studio</span></div>
+					</a>
+				</div>
+
+				<div class="col-md-4 col-xs-6 photography">
+					<a href="work/godspell.html">
+						<img src="../img/work/godspell/godspell-preview.jpg">
+						<div><span>Godspell</span></div>
+					</a>
+				</div>
+
+				<div class="col-md-4 col-xs-6 photography design">
+					<a href="work/japanband.html">
+						<img src="../img/work/japanband/japan-band-preview.jpg">
+						<div><span>Japanese Band</span></div>
+					</a>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+	$(window).load(function(){
+		var $container = $('.portfolioContainer');
+		$container.isotope({
+	    filter: '*',
+	    animationOptions: {
+				duration: 750,
+				easing: 'linear',
+				queue: false
+			}
+		});
+ 
+		$('.portfolioFilter a').click(function(){
+			$('.portfolioFilter .current').removeClass('current');
+			$(this).addClass('current');
+
+			var selector = $(this).attr('data-filter');
+			$container.isotope({
+				filter: selector,
+				animationOptions: {
+					duration: 750,
+					easing: 'linear',
+					queue: false
+				}
+			});
+			return false;
+		}); 
+	});
+	</script>
+
+	<div class="container-fluid main-container">
+		<div class="row">
+			<a href="index.html">
+				<div class="col-md-6 col-sm-6 col-xs-6 block">
+					<img src="../img/home.svg">
+					<p>Home</p>
+				</div>
+			</a>
+			<a href="contact.html">
+				<div class="col-md-6 col-sm-6 col-xs-6 block">
+					<img src="../img/mail.svg">
+					<p>Contact</p>
+				</div>
+			</a>
+		</div>
+	</div>
+</body>
