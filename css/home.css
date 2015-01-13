@@ -193,6 +193,10 @@ h4{
 	text-shadow: 0 2px 2px #ffffff;
 }
 
+.email-break{
+	display: none;
+}
+
 .contact-links{
 	margin-top: 200px;
 }
@@ -288,6 +292,10 @@ h4{
 	-ms-transform: translate(0,160px);
 }
 
+.contact-footer{
+	display: none;
+}
+
 
 
 /* Media Queries*/
@@ -314,14 +322,52 @@ h4{
 	}
 }
 
-@media (max-width: 996px){
+@media (max-width: 992px){
 
 	.twitter-text, .github-text, .instagram-text, .linkedin-text{
 		display: none;
 	}
+
+	.left-content{
+		width: 100%;
+		margin-top: 145px;
+	}
+
+	.right-content{
+		display: none;
+	}
+
+	.contact-links{
+		margin-top: 125px;
+		margin-bottom: 75px;
+	}
+
+	.contact-footer{
+		display: initial;
+	}
 }
 
+@media (max-width: 700px){
+	.left-content a{
+		font-size: 400%;
+	}
 
+	.contact-links a{
+		margin: 0 15%;
+		display: inline-block;
+	}
+
+}
+
+@media (max-width: 570px){
+	.left-content a{
+		font-size: 350%;
+	}
+
+	.email-break{
+		display: initial;
+	}
+}
 
 
 /* Work Page */
