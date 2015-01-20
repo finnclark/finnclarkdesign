@@ -86,15 +86,17 @@ h4{
 	color: #D58A00;
 }
 
+.footer{
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+}
+
 .block{
 	padding: 0;
 	height: 30vh;
 	background-color: #284256;
 	text-align: center;
-	-webkit-transition: all 200ms ease-in-out;
-  -moz-transition: all 200ms ease-in-out;
-  -o-transition: all 200ms ease-in-out;
-  transition: all 200ms ease-in-out;
 }
 
 .block:hover{
@@ -108,11 +110,6 @@ h4{
 	margin-top: 85px;
 	text-shadow: 0 -1px 0px #1F3342;
 	opacity: 1;
-
-	-webkit-transition: all 200ms ease-in-out;
-  -moz-transition: all 200ms ease-in-out;
-  -o-transition: all 200ms ease-in-out;
-  transition: all 200ms ease-in-out;
 }
 
 .block:hover > p{
@@ -129,7 +126,9 @@ h4{
 	height: 50px;
 	opacity: 0;
 	margin-top: -50px;
+}
 
+.block, .block p, .block img{
 	-webkit-transition: all 200ms ease-in-out;
   -moz-transition: all 200ms ease-in-out;
   -o-transition: all 200ms ease-in-out;
