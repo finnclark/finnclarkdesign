@@ -94,7 +94,7 @@ h4{
 
 .block{
 	padding: 0;
-	height: 30vh;
+	height: 235px;
 	background-color: #284256;
 	text-align: center;
 }
@@ -444,13 +444,13 @@ h4{
 }
 
 .filter-design-text{
-	margin-left: -2.9%;
+	margin-left: -3.2%;
 }
 .filter-photography-text{
-	margin-left: -4.3%;
+	margin-left: -4.6%;
 }
 .filter-illustration-text{
-	margin-left: -3.9%;
+	margin-left: -4.1%;
 }
 .filter-all-text{
 	margin-left: -2%;
@@ -515,13 +515,13 @@ h4{
 	}
 
 	.filter-design-text{
-		margin-left: -3.4%;
+		margin-left: -3.8%;
 	}
 	.filter-photography-text{
-		margin-left: -5%;
+		margin-left: -5.5%;
 	}
 	.filter-illustration-text{
-		margin-left: -4.6%;
+		margin-left: -5.1%;
 	}
 	.filter-all-text{
 		margin-left: -2.5%;
@@ -535,13 +535,13 @@ h4{
 	}
 
 	.filter-design-text{
-		margin-left: -4.5%;
+		margin-left: -5.1%;
 	}
 	.filter-photography-text{
-		margin-left: -6.6%;
+		margin-left: -7.1%;
 	}
 	.filter-illustration-text{
-		margin-left: -6.1%;
+		margin-left: -6.6%;
 	}
 	.filter-all-text{
 		margin-left: -3.2%;
