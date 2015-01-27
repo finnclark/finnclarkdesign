@@ -611,6 +611,10 @@ h4{
   transition: all 200ms ease-in-out;
 }
 
+.vimeo{
+	width: 100%;
+}
+
 .back-button, .next-button{
 	margin: 20px 0 100px;
 	opacity: .1;
@@ -622,7 +626,6 @@ h4{
 	opacity: 1;
 }
 
-
 .back-button{
 	float: left;
 }
@@ -633,9 +636,19 @@ h4{
 
 /* Media Queries */
 
+@media (max-width: 1200px){
+	.vimeo{
+		height: 538px;
+	}
+}
+
 @media (max-width: 992px){
 	.work-blurb{
 		padding: 0 19% 100px;
+	}
+
+	.vimeo{
+		height: 414px;
 	}
 }
 
@@ -644,10 +657,18 @@ h4{
 		margin: 20px 50px 50px;
 		width: 75px;
 	}
+
+	.vimeo{
+		height: 340px;
+	}
 }
 
 @media (max-width: 600px){
 	.work-blurb{
 		padding: 0 10% 100px;
+	}
+
+	.vimeo{
+		height: 260px;
 	}
 }
